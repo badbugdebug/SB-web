@@ -1,2 +1,8 @@
 lombok 5버전 실행 이슈 gradle 버전 낮추기
 gradlew wrapper --gradle-version 4.10.2
+
+
+localhost:8080/h2-console
+insert  into posts (author, content, title) values('author', 'content', 'title');
+jdbc-url
+jdbc:h2:mem:testdb
