@@ -6,3 +6,25 @@ localhost:8080/h2-console
 insert  into posts (author, content, title) values('author', 'content', 'title');
 jdbc-url
 jdbc:h2:mem:testdb
+
+
+detool 설정
+- build.gradle
+compile('org.springframework.boot:spring-boot-devtools')
+
+- application.~~
+spring.devtools.livereload.enabled=true
+spring.devtools.restart.enabled=true
+spring.freemarker.cache=false
+
+spring:
+    devtools:
+        livereload:
+            enabled: true
+        freemarker:
+            cache:false
+registry -> compiler.automake.allow.when.app.running
+Settings -> Build -> Compiler에서 Build project automatically를 체크
+
+https://haviyj.tistory.com/11
+https://jojoldu.tistory.com/48

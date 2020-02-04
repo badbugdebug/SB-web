@@ -8,6 +8,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.time.LocalDateTime;
+import java.util.List;
+
+import static org.assertj.core.api.Assertions.assertThat;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest   // 설정 없이 사용할시 default H2 사용
 public class PostRepositoryTest {
@@ -31,5 +36,26 @@ public class PostRepositoryTest {
             .author("jmpark@gmail.com")
             .build()
     );
+  }
+
+  @Test
+  public void BaseTimeEntity_register() {
+    //given
+    LocalDateTime now = LocalDateTime.of(2020, 1, 20, 0, 0, 0);
+    postsRepository.save(Posts.builder()
+            .title("title")
+            .content("content")
+            .author("author")
+            .build());
+    //when
+    List<Posts> postsList = postsRepository.findAll();
+
+    //then
+    Posts posts = postsList.get(0);
+
+    System.out.println(">>>>>>>>> createDate=" + posts.getCreatedDate() + ", modifiedDate=" + posts.getModifiedDate());
+
+    assertThat(posts.getCreatedDate()).isAfter(now);
+    assertThat(posts.getModifiedDate()).isAfter(now);
   }
 }
