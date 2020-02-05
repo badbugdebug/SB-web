@@ -34,10 +34,10 @@
     <property name="LOG_FILE_MAX" value="${log.config.max}"/>
     <!-- pattern -->
     <property name="LOG_PATTERN"
-              value="%d{yy-MM-dd HH:mm:ss} %highlight(%-5level)[%logger.%method:%line] - %msg%n"/>
+              value="%d{yy-MM-dd HH:mm:ss} %highlight(%-5level) - [%logger.%method:%line] - %msg%n"/>
 
     <property name="LOG_PATTERN_LIVE"
-              value="%d{yy-MM-dd HH:mm:ss} %highlight(%-5level)[%logger.%method:%line] - %msg%n"/>
+              value="%d{yy-MM-dd HH:mm:ss} %highlight(%-5level) - [%logger.%method:%line] - %msg%n"/>
 
     <!-- console log -->
     <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
