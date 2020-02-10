@@ -27,4 +27,10 @@ registry -> compiler.automake.allow.when.app.running
 Settings -> Build -> Compiler에서 Build project automatically를 체크
 
 https://haviyj.tistory.com/11
+
+
+edit configuration - update classes and resources
+
+dev-tool
 https://jojoldu.tistory.com/48
+https://lhb0517.tistory.com/entry/SpringIntelliJ-SpringBoot-HotSwap-with-IntelliJ
