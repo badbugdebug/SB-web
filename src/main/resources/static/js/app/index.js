@@ -19,7 +19,7 @@ var main = {
             author: $('#author').val(),
             content: $('#content').val()
         };
-
+// 객체 -> json 문자열
         $.ajax({
             type: 'POST',
             url: '/api/v1/posts',
