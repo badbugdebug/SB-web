@@ -34,3 +34,13 @@ edit configuration - update classes and resources
 dev-tool
 https://jojoldu.tistory.com/48
 https://lhb0517.tistory.com/entry/SpringIntelliJ-SpringBoot-HotSwap-with-IntelliJ
+
+google ouath
+https://console.cloud.google.com/
+
+redirect : http://localhost:8080/login/oauth2/code/google
+
+naver ouath
+https://developers.naver.com/apps/#/wizard/register
+
+redirect : http://localhost:8080/login/oauth2/code/naver
