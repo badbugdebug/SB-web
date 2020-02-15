@@ -37,7 +37,7 @@ https://lhb0517.tistory.com/entry/SpringIntelliJ-SpringBoot-HotSwap-with-Intelli
 
 google ouath
 https://console.cloud.google.com/
-
+도메인으로 할시 도메인 추가
 redirect : http://localhost:8080/login/oauth2/code/google
 
 naver ouath
