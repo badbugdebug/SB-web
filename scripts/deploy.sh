@@ -1,7 +1,7 @@
 #!/bin/bash
 
 REPOSITORY=/home/ec2-user/app/step1
-PROJECT_NAME=SB-web-springboot
+PROJECT_NAME=SB-web
 
 cd $REPOSITORY/$PROJECT_NAME/
 
