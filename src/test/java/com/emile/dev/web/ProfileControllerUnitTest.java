@@ -8,7 +8,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class ProfileControllerUnitTest {
 
     @Test
-    public void real_profileselect() {
+    public void real_profile_select() {
         //given
         String expectedProfile = "real";
         MockEnvironment env = new MockEnvironment();
