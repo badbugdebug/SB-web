@@ -1,7 +1,8 @@
 #!/bin/bash
 
 REPOSITORY=/home/ec2-user/app/step2
-PROJECT_NAME=SB-web-springboot
+PROJECT_NAME=SB-web
+
 
 echo "> Build 파일 복사"
 
